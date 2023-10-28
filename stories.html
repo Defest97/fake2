@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Carousel</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="stories">
+    <div id="slider1">
+        <header>
+            <a href="./index.html">
+                <svg aria-label="Параметри" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img"
+                    viewBox="0 0 24 24" width="24">
+                    <title>Параметри</title>
+                    <circle cx="12" cy="12" fill="none" r="8.635" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></circle>
+                    <path
+                        d="M14.232 3.656a1.269 1.269 0 0 1-.796-.66L12.93 2h-1.86l-.505.996a1.269 1.269 0 0 1-.796.66m-.001 16.688a1.269 1.269 0 0 1 .796.66l.505.996h1.862l.505-.996a1.269 1.269 0 0 1 .796-.66M3.656 9.768a1.269 1.269 0 0 1-.66.796L2 11.07v1.862l.996.505a1.269 1.269 0 0 1 .66.796m16.688-.001a1.269 1.269 0 0 1 .66-.796L22 12.93v-1.86l-.996-.505a1.269 1.269 0 0 1-.66-.796M7.678 4.522a1.269 1.269 0 0 1-1.03.096l-1.06-.348L4.27 5.587l.348 1.062a1.269 1.269 0 0 1-.096 1.03m11.8 11.799a1.269 1.269 0 0 1 1.03-.096l1.06.348 1.318-1.317-.348-1.062a1.269 1.269 0 0 1 .096-1.03m-14.956.001a1.269 1.269 0 0 1 .096 1.03l-.348 1.06 1.317 1.318 1.062-.348a1.269 1.269 0 0 1 1.03.096m11.799-11.8a1.269 1.269 0 0 1-.096-1.03l.348-1.06-1.317-1.318-1.062.348a1.269 1.269 0 0 1-1.03-.096"
+                        fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+            </a>
+            <svg id="addSlide" aria-label="Закрити" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24"
+                role="img" viewBox="0 0 24 24" width="24">
+                <title>Закрити</title>
+                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    x1="21" x2="3" y1="3" y2="21"></line>
+                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    x1="21" x2="3" y1="21" y2="3"></line>
+            </svg>
+        </header>
+        <div class="slider">
+
+        </div>
+    </div>
+    <div class="statistic">
+        <div class="btns">
+            <div>
+                <img src="img/chart.jpg" alt="" style="width: 25px;height: 25px;">
+                <img src="img/eay.png" alt="" style="width: 20px;height: 20px;">
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <img src="img/trash.png" alt="" style="width: 20px;height: 20px;">
+        </div>
+        <div class="review">
+            <div class="head">
+                <span class="instbold">Обзор</span>
+                <svg aria-label="Інформація" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16"
+                    role="img" viewBox="0 0 24 24" width="16">
+                    <title>Інформація</title>
+                    <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></circle>
+                    <circle cx="11.819" cy="7.709" r="1.25"></circle>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="10.569" x2="13.432" y1="16.777" y2="16.777"></line>
+                    <polyline fill="none" points="10.569 11.05 12 11.05 12 16.777" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                </svg>
+            </div>
+            <div>
+                <p>Охваченные аккаунты</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Вовлеченые аккаунты</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Действия в профиле</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+        </div>
+        <div class="coverage">
+            <div class="head">
+                <span class="instbold">Охват</span>
+                <svg aria-label="Інформація" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16"
+                    role="img" viewBox="0 0 24 24" width="16">
+                    <title>Інформація</title>
+                    <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></circle>
+                    <circle cx="11.819" cy="7.709" r="1.25"></circle>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="10.569" x2="13.432" y1="16.777" y2="16.777"></line>
+                    <polyline fill="none" points="10.569 11.05 12 11.05 12 16.777" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                </svg>
+            </div>
+            <div class="chart-container">
+                <div class="centered-text">
+                    <input type="number" class="instbold" id="accounts" placeholder="--">
+                    <span>Охваченные аккаунты</span>
+                </div>
+                <div class="bottom-row">
+                    <div class="justend">
+                        <input type="number" class="instbold" id="subscriber" placeholder="--">
+                        <div class="dot-container"><span>Подписчики</span>
+                            <div class="dot blue"></div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div id="container">
+                            <div>
+                                <canvas id="myChart" width="60" height="60"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juststart">
+                        <input type="number" class="instbold" id="nonsubscriber" placeholder="--">
+                        <div class="dot-container">
+                            <div class="dot darkblue"></div><span>Не подписчики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shows">
+            <p class="instbold" style="font-size: 24px;">Показы</p>
+            <input type="number" class="instbold" placeholder="--" style="font-size: 22px;">
+        </div>
+        <div class="involvement">
+            <div class="head">
+                <span class="instbold">Вовлеченность</span>
+                <svg aria-label="Інформація" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16"
+                    role="img" viewBox="0 0 24 24" width="16">
+                    <title>Інформація</title>
+                    <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></circle>
+                    <circle cx="11.819" cy="7.709" r="1.25"></circle>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="10.569" x2="13.432" y1="16.777" y2="16.777"></line>
+                    <polyline fill="none" points="10.569 11.05 12 11.05 12 16.777" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                </svg>
+            </div>
+            <div class="chart-container">
+                <div class="centered-text">
+                    <input type="number" class="instbold" id="accounts1" placeholder="--">
+                    <span>Вовлеченные аккаунты</span>
+                </div>
+                <div class="bottom-row">
+                    <div class="justend">
+                        <input type="number" class="instbold" id="subscriber1" placeholder="--">
+                        <div class="dot-container"><span>Подписчики</span>
+                            <div class="dot blue"></div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div id="container">
+                            <div>
+                                <canvas id="myChart1" width="60" height="60"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juststart">
+                        <input type="number" class="instbold" id="nonsubscriber1" placeholder="--">
+                        <div class="dot-container">
+                            <div class="dot darkblue"></div><span>Не подписчики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="interaction">
+            <div class="head">
+                <span class="instbold" style="font-size: 20px;">Взаимодействия с историей</span>
+                <input type="number" class="instbold" placeholder="--" style="font-size: 22px;">
+            </div>
+            <div>
+                <p>Отметки "Нравится"</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Ответы</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Репосты</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+        </div>
+        <div class="stickers">
+            <div>
+                <p class="instbold" style="font-size: 24px;">Нажатия на стикеры</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <input type="text" placeholder="@herbal_craft" style="font-size: 16px;">
+                <input type="number" placeholder="--" style="font-size: 16px;">
+            </div>
+        </div>
+        <div class="interaction">
+            <div class="head">
+                <span class="instbold" style="font-size: 22px;">Навигация</span>
+                <input type="number" class="instbold" placeholder="--" style="font-size: 22px;">
+            </div>
+            <div>
+                <p>Вперед</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Назад</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Выходы</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Следуюзая история</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+        </div>
+        <div class="interaction rows3">
+            <div class="head">
+                <div><span class="instbold" style="font-size: 22px;">Действия в профиле</span><svg
+                        aria-label="Інформація" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16"
+                        role="img" viewBox="0 0 24 24" width="16">
+                        <title>Інформація</title>
+                        <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                        <circle cx="11.819" cy="7.709" r="1.25"></circle>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="10.569" x2="13.432" y1="16.777" y2="16.777"></line>
+                        <polyline fill="none" points="10.569 11.05 12 11.05 12 16.777" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                    </svg></div>
+                <input type="number" class="instbold" placeholder="--" style="font-size: 22px;">
+            </div>
+            <div>
+                <p>Посещение профиля</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+            <div>
+                <p>Подписки</p>
+                <input type="number" class="instbold" placeholder="--">
+            </div>
+        </div>
+    </div>
+    <input type="file" accept="image/*" id="fileInput" style="display: none; " multiple>
+    <script>
+        $(document).ready(function () {
+            initCarousel();
+        });
+        const addSlide = document.getElementById("addSlide");
+        addSlide.addEventListener("click", function () { document.getElementById("fileInput").click(); });
+        document.getElementById("fileInput").addEventListener("change", function () {
+            const files = this.files;
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                if (file.type.startsWith("image/")) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const div = document.createElement('div');
+                        const img = document.createElement('img');
+                        const imgInput = document.createElement('img');
+                        const divInput = document.createElement('div');
+                        const input = document.createElement('input');
+                        div.classList.add('slide');
+                        img.src = e.target.result;
+                        imgInput.src = 'img/eayWhite.png';
+                        imgInput.style = 'height:10px;width:10px;';
+                        input.classList.add('likesInput')
+                        input.addEventListener('input', function () {
+                            const inputText = input.value;
+                            const inputLength = inputText.length;
+                            const maxInputWidth = 40;
+                            const inputWidth = Math.min(inputLength * 8, maxInputWidth);
+                            input.style.width = inputWidth + 'px';
+                        });
+                        divInput.classList.add('likes')
+                        input.type = 'number';
+                        input.placeholder = '--';
+                        divInput.appendChild(imgInput);
+                        divInput.appendChild(input);
+                        div.appendChild(img);
+                        div.appendChild(divInput);
+                        $('.slider').slick('slickAdd', div)
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
+        });
+        function initCarousel() {
+            $('.slider').slick({
+                slidesToShow: 5,
+                focusOnSelect: true,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 844,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '10px',
+                            slidesToShow: 5,
+                            variableWidth: true,
+                        }
+                    }
+                ]
+            });
+        }
+        function createAndInitChart(canvasId, subscriberInputId, nonsubscriberInputId, accountsInputId) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            const subscriberInput = document.getElementById(subscriberInputId);
+            const nonsubscriberInput = document.getElementById(nonsubscriberInputId);
+            const accountsInput = document.getElementById(accountsInputId);
+            function getDataFromInputs() {
+                return [
+                    Number(nonsubscriberInput.value) || 0,
+                    Number(subscriberInput.value) || 1
+                ];
+            }
+            const data = {
+                datasets: [{
+                    data: getDataFromInputs(),
+                    backgroundColor: ['#063563', '#3498db'],
+                    borderColor: ['#ffffff', '#ffffff'],
+                    borderWidth: 1
+                }],
+                labels: ['Непідписники', 'Підписники']
+            };
+            const config = {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            };
+            const myChart = new Chart(ctx, config);
+            function updateChart(accounts) {
+                myChart.data.datasets[0].data = getDataFromInputs();
+                myChart.update();
+                if (subscriberInput.value && nonsubscriberInput.value)
+                    accountsInput.value = Number(subscriberInput.value) + Number(nonsubscriberInput.value);
+            }
+
+            subscriberInput.addEventListener('input', updateChart);
+            nonsubscriberInput.addEventListener('input', updateChart);
+        }
+        createAndInitChart('myChart', 'subscriber', 'nonsubscriber', "accounts");
+        createAndInitChart('myChart1', 'subscriber1', 'nonsubscriber1', "accounts1");
+    </script>
+</body>
+</html>
